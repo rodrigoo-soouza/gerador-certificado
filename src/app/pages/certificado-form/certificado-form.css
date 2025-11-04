@@ -3,11 +3,10 @@
   gap: 32px;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
- padding: 32px;
-
+  padding: 32px;
 }
 
-.card-title{
+.card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -16,11 +15,11 @@
   margin-bottom: 20px;
 }
 
-.atividade-group{
+.atividade-group {
   margin-bottom: 32px;
 }
 
-label{
+label {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -28,7 +27,7 @@ label{
   color: #1a2856;
 }
 
-.item-list{
+.item-list {
   width: 100%;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
@@ -36,13 +35,13 @@ label{
   gap: 12px;
 }
 
-.item{
+.item {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.item-list hr{
+.item-list hr {
   all: unset;
   display: block;
   height: 1px;
@@ -50,7 +49,7 @@ label{
   margin: 12px 0;
 }
 
-.remove-btn i{
+.remove-btn i {
   padding: 5.75px;
   color: #e95e5f;
   font-size: 12.5px;
@@ -58,38 +57,37 @@ label{
   cursor: pointer;
 }
 
-.remove-btn i:hover{
+.remove-btn i:hover {
   background: #e2e8f0;
 }
 
-.custom-input{
+.custom-input {
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   padding: 8px 12px;
   height: 40px;
 }
 
-.custom-input:focus{
+.custom-input:focus {
   border: 1px solid #3b5ac2;
   box-shadow: none;
 }
 
-.custom-input-group{
+.custom-input-group {
   margin-bottom: 20px !important;
-
 }
 
-.custom-input-group:has(input:focus) label{
+.custom-input-group:has(input:focus) label {
   color: #3b5ac2;
 }
 
-.error-message{
+.error-message {
   gap: 4px;
   color: #d71d1d;
   margin-top: 8px;
 }
 
-.error-message p{
+.error-message p {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -97,6 +95,6 @@ label{
   vertical-align: middle;
 }
 
-.custom-input-group:has(.error-message) >label{
+.text-danger-label {
   color: #d71d1d;
 }
