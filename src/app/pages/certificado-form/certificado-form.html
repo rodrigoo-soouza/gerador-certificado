@@ -25,7 +25,7 @@
       </div>
       <!-- <app-secondary-button [ngStyle]="atividadeRef.invalid && atividadeRef.touched && atividadeRef.errors?.['required'] ? {'margin-bottom': '24px'} : {}"/> -->
 
-       <app-secondary-button (click)="adicionarAtividade()" [disable]="atividade.length == 0" textoBotao="Adicionar" phClass="ph ph-plus" />
+       <app-secondary-button (click)="adicionarAtividade()" [disable]="!atividade || atividade.length == 0" textoBotao="Adicionar" phClass="ph ph-plus" />
 
 
     </div>
