@@ -7,7 +7,7 @@
   <div class="custom-card w-100">
     <h2 class="card-title">Novo certificado</h2>
     <div class="mb-3 custom-input-group">
-      <label [ngClass]="{'text-danger-label' : campoInvalido(nomeRef)}" for="Nome" class="form-label">Nome</label>
+      <label [ngClass]="{'text-danger-label' : campoInvalido(nomeRef)}" for="nome" class="form-label">Nome</label>
       <input [(ngModel)]="certificado.nome" name="nome" #nomeRef="ngModel" maxlength="150" required id="nome" type="text" class="form-control custom-input" placeholder="Nome do aluno">
       @if (campoInvalido(nomeRef)) {
         <div class="error-message d-flex align-items-center">

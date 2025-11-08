@@ -35,6 +35,9 @@ export class CertificadoFormComponent {
   }
 
   adicionarAtividade(){
+    if (this.atividade.length == 0) {
+      return;
+    }
     this.certificado.listaAtividades.push(this.atividade);
     this.atividade = '';
   }
@@ -50,7 +53,7 @@ export class CertificadoFormComponent {
     this.certificado.dataEmissao = this.dataAtual();
     this.certificado.id = uuidv4();
     this.certificadoService.adicionarCertificado(this.certificado);
-    
+
     this.certificado = this.estadoInicialCertificado();
     this.form.resetForm();
   }
@@ -72,7 +75,7 @@ export class CertificadoFormComponent {
       nome: '',
       dataEmissao: ''
 
-    }    
+    }
   }
 
 }
