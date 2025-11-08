@@ -4,26 +4,26 @@
       <i class="ph ph-arrow-left"></i>
       <p class="m-0">Voltar</p>
     </div>
-    <app-secondary-button phClass="ph ph-download-simple" textoBotao="Download" />
+    <app-secondary-button (click)="downloadCertificado()" phClass="ph ph-download-simple" textoBotao="Download" />
   </div>
   @if (certificado) {
-    <div class="certificado d-flex justify-content-center align-items-center">
-      <img class="icone-medalha" src="certificate/certificate_ribbon.png" alt="">
-      <div class="conteudo-certificado">
-        <img class="img-assinatura" src="certificate/certificate_signature.svg" alt="assinatura"/>
-        <div class="info-certificado d-flex flex-column align-items-center">
-          <div class="titulo-subtitulo-certificado">
-            <h1>certificado de conclusão</h1>
-            <p>Este certfificado comprova que</p>
-          </div>
-          <p class="nome-aluno">{{certificado.nome}}</p>
-          <div>
-            <p class="lista-atividade-titulo">Concluiu com sucesso as seguintes atividades:</p>
-            <p class="lista-atividade">{{certificado.listaAtividades.join(', ')}}</p>
-          </div>
+  <div #certificadoContainer class="certificado d-flex justify-content-center align-items-center">
+    <img class="icone-medalha" src="certificate/certificate_ribbon.png" alt="">
+    <div class="conteudo-certificado">
+      <img class="img-assinatura" src="certificate/certificate_signature.svg" alt="assinatura" />
+      <div class="info-certificado d-flex flex-column align-items-center">
+        <div class="titulo-subtitulo-certificado">
+          <h1>certificado de conclusão</h1>
+          <p>Este certfificado comprova que</p>
         </div>
-        <p class="data-emissao">Emitido em {{certificado.dataEmissao}}</p>
+        <p class="nome-aluno">{{certificado.nome}}</p>
+        <div>
+          <p class="lista-atividade-titulo">Concluiu com sucesso as seguintes atividades:</p>
+          <p class="lista-atividade">{{certificado.listaAtividades.join(', ')}}</p>
+        </div>
       </div>
+      <p class="data-emissao">Emitido em {{certificado.dataEmissao}}</p>
     </div>
+  </div>
   }
 </div>
